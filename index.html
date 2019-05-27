@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+</head>
+
+<body onload="document.getElementById('doge').innerHTML = 'Woof'">
+    <div id="button">
+        <button id="doge" onmouseover="enter(this)" onmouseout="leave(this)" onclick="toggleDisplay(pic)">Doggo</button>
+    </div>
+
+    <img src=" /dog.jpg " id="pic" alt="picture of doge " style="display: none">
+
+    <script>
+        function leave(obj) {
+            obj.innerHTML = "Woof "
+        }
+
+        function enter(obj) {
+            obj.innerHTML = "Woof Woof "
+        }
+
+        function toggleDisplay(obj) {
+            var x = document.getElementById(obj)
+            if (obj.style.display == 'none')
+                obj.style.display = 'block';
+            else
+                obj.style.display = 'none';
+
+        }
+    </script>
+
+</body>
+
+</html>
