@@ -18,14 +18,15 @@
     <img src=" /Doge/images/dog.jpg " id="pic" alt="picture of doge " style="display: none">
 
     <script>
+        // changes the button-text to "woof" when the mouse goes back out of it.
         function leave(obj) {
             obj.innerHTML = "Woof "
         }
-
+        // changes the button-text to "woof" when the mouse hovers over it.
         function enter(obj) {
             obj.innerHTML = "Woof Woof "
         }
-
+        // toggles the display of the picture on or off.
         function toggleDisplay(obj) {
             if (obj.style.display == 'none')
                 obj.style.display = 'block';
